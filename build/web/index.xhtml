@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Biblioteca da Vovó</title>
+        <link rel="StyleSheet" type="text/css" href="CSS/style.css" media="screen"/>
+    </h:head>
+    <h:body>
+        <div align="right" >
+            <h:form id="formLogin" prependId="false">
+                <p:outputLabel>Login: </p:outputLabel>
+                <p:inputText value="#{loginMb.pessoaLogada.login}"/>
+                <p:outputLabel>Senha: </p:outputLabel>
+                <p:password value="#{loginMb.pessoaLogada.senha}"/>         
+                <p:commandButton value="logar" action="#{loginMb.logar}" ajax="false" /><br/>                
+            </h:form>
+            <p:messages> </p:messages>
+        </div>        
+    </h:body>
+</html>
+
